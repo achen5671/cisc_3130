@@ -1,0 +1,738 @@
+Position,"Track Name",Artist,Streams,URL
+
+Artist: Cardi B
+# of Track: (1)
+1, Cardi B, WAP (feat. Megan Thee Stallion), 6466204
+
+
+Artist: Maluma
+# of Track: (4)
+2, Maluma, Hawái, 5696927
+112, Maluma, Parce (feat. Justin Quiles), 847964
+153, Maluma, ADMV, 731463
+154, Maluma, Madrid, 731040
+
+
+Artist: 24kGoldn
+# of Track: (1)
+3, 24kGoldn, Mood (feat. Iann Dior), 4847213
+
+
+Artist: BTS
+# of Track: (2)
+4, BTS, Dynamite, 4642593
+148, BTS, Boy With Luv (feat. Halsey), 740809
+
+
+Artist: The Weeknd
+# of Track: (2)
+5, The Weeknd, Blinding Lights, 3827733
+74, The Weeknd, In Your Eyes, 1114680
+
+
+Artist: Jawsh 685
+# of Track: (1)
+6, Jawsh 685, Savage Love (Laxed - Siren Beat), 3710351
+
+
+Artist: Harry Styles
+# of Track: (3)
+7, Harry Styles, Watermelon Sugar, 3699915
+57, Harry Styles, Adore You, 1324203
+104, Harry Styles, Falling, 921802
+
+
+Artist: BLACKPINK
+# of Track: (2)
+8, BLACKPINK, Ice Cream (with Selena Gomez), 3563748
+38, BLACKPINK, How You Like That, 1706557
+
+
+Artist: Drake
+# of Track: (3)
+9, Drake, Laugh Now Cry Later (feat. Lil Durk), 3547315
+56, Drake, Toosie Slide, 1335756
+132, Drake, Chicago Freestyle (feat. Giveon), 790590
+
+
+Artist: DaBaby
+# of Track: (1)
+10, DaBaby, ROCKSTAR (feat. Roddy Ricch), 3537690
+
+
+Artist: Pop Smoke
+# of Track: (5)
+11, Pop Smoke, Mood Swings (feat. Lil Tjay), 2593785
+13, Pop Smoke, For The Night (feat. Lil Baby & DaBaby), 2460218
+40, Pop Smoke, The Woo (feat. 50 Cent & Roddy Ricch), 1629743
+84, Pop Smoke, Dior, 1012847
+101, Pop Smoke, Got It On Me, 935784
+
+
+Artist: SAINt JHN
+# of Track: (1)
+12, SAINt JHN, Roses - Imanbek Remix, 2528211
+
+
+Artist: Topic
+# of Track: (1)
+14, Topic, Breaking Me, 2425804
+
+
+Artist: KAROL G
+# of Track: (2)
+15, KAROL G, Ay DiOs Mío!, 2415107
+69, KAROL G, Tusa, 1160509
+
+
+Artist: Conan Gray
+# of Track: (1)
+16, Conan Gray, Heather, 2414918
+
+
+Artist: J Balvin
+# of Track: (3)
+17, J Balvin, UN DIA (ONE DAY) (Feat. Tainy), 2354241
+103, J Balvin, Azul, 925417
+114, J Balvin, Rojo, 846926
+
+
+Artist: Joel Corry
+# of Track: (1)
+18, Joel Corry, Head & Heart (feat. MNEK), 2351625
+
+
+Artist: Juice WRLD
+# of Track: (10)
+19, Juice WRLD, Come & Go (with Marshmello), 2140858
+27, Juice WRLD, Smile (with The Weeknd), 1958142
+31, Juice WRLD, Wishing Well, 1883562
+61, Juice WRLD, Lucid Dreams, 1209029
+71, Juice WRLD, Robbery, 1143264
+123, Juice WRLD, Conversations, 815624
+124, Juice WRLD, All Girls Are The Same, 814256
+130, Juice WRLD, Hate The Other Side (with Marshmello & The Kid Laroi), 794429
+131, Juice WRLD, Righteous, 793010
+192, Juice WRLD, Bandit (with YoungBoy Never Broke Again), 641824
+
+
+Artist: Lady Gaga
+# of Track: (3)
+20, Lady Gaga, Rain On Me (with Ariana Grande), 2101470
+92, Lady Gaga, Shallow, 971894
+187, Lady Gaga, Sour Candy (with BLACKPINK), 655822
+
+
+Artist: Jay Wheeler
+# of Track: (1)
+21, Jay Wheeler, La Curiosidad, 2059017
+
+
+Artist: Internet Money
+# of Track: (2)
+22, Internet Money, Lemonade (feat. Gunna Don Toliver & NAV), 2012814
+76, Internet Money, Blastoff (feat. Juice Wrld & Trippie Redd), 1102605
+
+
+Artist: Nio Garcia
+# of Track: (1)
+23, Nio Garcia, La Jeepeta - Remix, 2006271
+
+
+Artist: Rauw Alejandro
+# of Track: (2)
+24, Rauw Alejandro, Tattoo - Remix with Camilo, 1988226
+108, Rauw Alejandro, Elegí (feat. Dímelo Flow), 893639
+
+
+Artist: Miley Cyrus
+# of Track: (2)
+25, Miley Cyrus, Midnight Sky, 1983724
+143, Miley Cyrus, When I Look At You, 767009
+
+
+Artist: Ozuna
+# of Track: (2)
+26, Ozuna, Caramelo, 1970350
+120, Ozuna, Caramelo - Remix, 823739
+
+
+Artist: Tones And I
+# of Track: (1)
+28, Tones And I, Dance Monkey, 1948398
+
+
+Artist: Lewis Capaldi
+# of Track: (3)
+29, Lewis Capaldi, Someone You Loved, 1903846
+32, Lewis Capaldi, Before You Go, 1841944
+177, Lewis Capaldi, Bruises, 667827
+
+
+Artist: Powfu
+# of Track: (1)
+30, Powfu, death bed (coffee for your head), 1885004
+
+
+Artist: Tate McRae
+# of Track: (1)
+33, Tate McRae, you broke me first, 1833373
+
+
+Artist: Sech
+# of Track: (1)
+34, Sech, Relación, 1830608
+
+
+Artist: Jack Harlow
+# of Track: (2)
+35, Jack Harlow, WHATS POPPIN (feat. DaBaby Tory Lanez & Lil Wayne) - Remix, 1800696
+134, Jack Harlow, WHATS POPPIN, 779068
+
+
+Artist: Calvin Harris
+# of Track: (1)
+36, Calvin Harris, Over Now (with The Weeknd), 1791429
+
+
+Artist: Tainy
+# of Track: (1)
+37, Tainy, Agua (with J Balvin) - Music From Sponge On The Run Movie, 1784693
+
+
+Artist: Chris Brown
+# of Track: (2)
+39, Chris Brown, Go Crazy, 1676004
+159, Chris Brown, No Guidance (feat. Drake), 710212
+
+
+Artist: Dua Lipa
+# of Track: (3)
+41, Dua Lipa, Break My Heart, 1601897
+42, Dua Lipa, Don't Start Now, 1600423
+152, Dua Lipa, Physical, 733050
+
+
+Artist: Lil Mosey
+# of Track: (1)
+43, Lil Mosey, Blueberry Faygo, 1599384
+
+
+Artist: DJ Khaled
+# of Track: (2)
+44, DJ Khaled, GREECE (feat. Drake), 1591022
+79, DJ Khaled, POPSTAR (feat. Drake), 1051539
+
+
+Artist: Black Eyed Peas
+# of Track: (2)
+45, Black Eyed Peas, MAMACITA, 1545340
+184, Black Eyed Peas, RITMO (Bad Boys For Life), 657803
+
+
+Artist: Aya Nakamura
+# of Track: (1)
+46, Aya Nakamura, Djadja (feat. Maluma) - Remix, 1529721
+
+
+Artist: Surf Mesa
+# of Track: (1)
+47, Surf Mesa, ily (i love you baby) (feat. Emilee), 1518907
+
+
+Artist: Ariana Grande
+# of Track: (2)
+48, Ariana Grande, Stuck with U (with Justin Bieber), 1508893
+129, Ariana Grande, 7 rings, 799560
+
+
+Artist: KHEA
+# of Track: (1)
+49, KHEA, Ayer Me Llamó Mi Ex (feat. Lenny Santos), 1456014
+
+
+Artist: Trueno
+# of Track: (1)
+50, Trueno, Mamichula - con Nicki Nicole, 1447365
+
+
+Artist: Ava Max
+# of Track: (1)
+51, Ava Max, Kings & Queens, 1438704
+
+
+Artist: StaySolidRocky
+# of Track: (1)
+52, StaySolidRocky, Party Girl, 1422576
+
+
+Artist: Labrinth
+# of Track: (1)
+53, Labrinth, Still Don't Know My Name, 1396382
+
+
+Artist: Post Malone
+# of Track: (3)
+54, Post Malone, Circles, 1345363
+66, Post Malone, Sunflower - Spider-Man: Into the Spider-Verse, 1165259
+141, Post Malone, rockstar (feat. 21 Savage), 767978
+
+
+Artist: Jason Derulo
+# of Track: (1)
+55, Jason Derulo, Take You Dancing, 1336945
+
+
+Artist: Roddy Ricch
+# of Track: (1)
+58, Roddy Ricch, The Box, 1300398
+
+
+Artist: Travis Scott
+# of Track: (4)
+59, Travis Scott, goosebumps, 1221577
+75, Travis Scott, HIGHEST IN THE ROOM, 1107512
+86, Travis Scott, SICKO MODE, 991059
+102, Travis Scott, The Plan - From the Motion Picture TENET, 931320
+
+
+Artist: Taylor Swift
+# of Track: (3)
+60, Taylor Swift, cardigan, 1209312
+93, Taylor Swift, exile (feat. Bon Iver), 965876
+142, Taylor Swift, the 1, 767781
+
+
+Artist: Jerry Di
+# of Track: (1)
+62, Jerry Di, Mi Cuarto, 1204767
+
+
+Artist: BØRNS
+# of Track: (1)
+63, BØRNS, Electric Love, 1197597
+
+
+Artist: Machine Gun Kelly
+# of Track: (1)
+64, Machine Gun Kelly, my ex's best friend (with blackbear), 1179561
+
+
+Artist: Trevor Daniel
+# of Track: (1)
+65, Trevor Daniel, Falling, 1171938
+
+
+Artist: Shawn Mendes
+# of Track: (1)
+67, Shawn Mendes, Señorita, 1161924
+
+
+Artist: Maroon 5
+# of Track: (2)
+68, Maroon 5, Memories, 1161860
+117, Maroon 5, Nobody's Love, 827578
+
+
+Artist: Justin Bieber
+# of Track: (1)
+70, Justin Bieber, Intentions (feat. Quavo), 1150598
+
+
+Artist: Billie Eilish
+# of Track: (5)
+72, Billie Eilish, my future, 1139575
+78, Billie Eilish, bad guy, 1090282
+82, Billie Eilish, lovely (with Khalid), 1033262
+98, Billie Eilish, everything i wanted, 947218
+145, Billie Eilish, when the party's over, 760150
+
+
+Artist: ROSAL�?A
+# of Track: (1)
+73, ROSAL�?A, TKN (feat. Travis Scott), 1118509
+
+
+Artist: Marshmello
+# of Track: (2)
+77, Marshmello, Be Kind (with Halsey), 1090864
+166, Marshmello, Happier, 694216
+
+
+Artist: Super Yei
+# of Track: (1)
+80, Super Yei, Lean (feat. Towy Osquel Beltito & Sammy & Falsetto), 1043665
+
+
+Artist: Anuel AA
+# of Track: (1)
+81, Anuel AA, Hasta Que Dios Diga, 1042623
+
+
+Artist: Curtis Waters
+# of Track: (1)
+83, Curtis Waters, Stunnin' (feat. Harm Franklin), 1013723
+
+
+Artist: Future
+# of Track: (1)
+85, Future, Life Is Good (feat. Drake), 1000788
+
+
+Artist: Doja Cat
+# of Track: (2)
+87, Doja Cat, Say So, 990664
+162, Doja Cat, Boss Bitch, 705763
+
+
+Artist: Regard
+# of Track: (2)
+88, Regard, Ride It, 987072
+90, Regard, Secrets, 978454
+
+
+Artist: Arizona Zervas
+# of Track: (1)
+89, Arizona Zervas, ROXANNE, 979547
+
+
+Artist: Camilo
+# of Track: (2)
+91, Camilo, Favorito, 977366
+133, Camilo, El Mismo Aire - con Pablo Alborán, 780799
+
+
+Artist: JP Saxe
+# of Track: (1)
+94, JP Saxe, If the World Was Ending - feat. Julia Michaels, 962384
+
+
+Artist: Feid
+# of Track: (1)
+95, Feid, PORFA Remix ( Feat. Maluma Nicky Jam Sech) - Remix, 954425
+
+
+Artist: K/DA
+# of Track: (1)
+96, K/DA, THE BADDEST, 951079
+
+
+Artist: THE SCOTTS
+# of Track: (1)
+97, THE SCOTTS, THE SCOTTS, 949591
+
+
+Artist: Jul
+# of Track: (1)
+99, Jul, Bande organisée, 939759
+
+
+Artist: Kane Brown
+# of Track: (1)
+100, Kane Brown, Be Like That - feat. Swae Lee & Khalid, 937674
+
+
+Artist: Imagine Dragons
+# of Track: (1)
+105, Imagine Dragons, Believer, 914204
+
+
+Artist: Surfaces
+# of Track: (1)
+106, Surfaces, Sunday Best, 913744
+
+
+Artist: BENEE
+# of Track: (1)
+107, BENEE, Supalonely, 910464
+
+
+Artist: ITZY
+# of Track: (1)
+109, ITZY, Not Shy, 866392
+
+
+Artist: Nea
+# of Track: (1)
+110, Nea, Some Say - Felix Jaehn Remix, 866231
+
+
+Artist: WhoHeem
+# of Track: (1)
+111, WhoHeem, Lets Link, 862376
+
+
+Artist: Melanie Martinez
+# of Track: (1)
+113, Melanie Martinez, Play Date, 847570
+
+
+Artist: Eminem
+# of Track: (1)
+115, Eminem, Godzilla (feat. Juice WRLD), 841058
+
+
+Artist: Harry Nach
+# of Track: (1)
+116, Harry Nach, Tak Tiki Tak, 829621
+
+
+Artist: Don Toliver
+# of Track: (1)
+118, Don Toliver, After Party, 826162
+
+
+Artist: Ed Sheeran
+# of Track: (5)
+119, Ed Sheeran, I Don't Care (with Justin Bieber), 824102
+135, Ed Sheeran, Perfect, 778052
+144, Ed Sheeran, Shape of You, 765980
+151, Ed Sheeran, Beautiful People (feat. Khalid), 735483
+197, Ed Sheeran, Photograph, 628950
+
+
+Artist: XXXTENTACION
+# of Track: (3)
+121, XXXTENTACION, Jocelyn Flores, 822204
+139, XXXTENTACION, SAD!, 769838
+188, XXXTENTACION, Moonlight, 653436
+
+
+Artist: blackbear
+# of Track: (1)
+122, blackbear, hot girl bummer, 816271
+
+
+Artist: James Arthur
+# of Track: (1)
+125, James Arthur, Say You Won't Let Go, 812088
+
+
+Artist: Wallows
+# of Track: (1)
+126, Wallows, Are You Bored Yet? (feat. Clairo), 810861
+
+
+Artist: Bad Bunny
+# of Track: (2)
+127, Bad Bunny, Yo Perreo Sola, 809868
+128, Bad Bunny, Safaera, 800394
+
+
+Artist: Kendrick Lamar
+# of Track: (1)
+136, Kendrick Lamar, Money Trees, 774030
+
+
+Artist: Jhay Cortez
+# of Track: (1)
+137, Jhay Cortez, CÓMO SE SIENTE - Remix, 772313
+
+
+Artist: Kygo
+# of Track: (2)
+138, Kygo, Lose Somebody, 771202
+183, Kygo, What's Love Got to Do with It, 658241
+
+
+Artist: Gunna
+# of Track: (1)
+140, Gunna, DOLLAZ ON MY HEAD (feat. Young Thug), 768416
+
+
+Artist: MEDUZA
+# of Track: (1)
+146, MEDUZA, Lose Control, 750190
+
+
+Artist: Saweetie
+# of Track: (1)
+147, Saweetie, Tap In, 741706
+
+
+Artist: 6ix9ine
+# of Track: (1)
+149, 6ix9ine, GOOBA, 737405
+
+
+Artist: The Kid LAROI
+# of Track: (1)
+150, The Kid LAROI, GO (feat. Juice WRLD), 736082
+
+
+Artist: Megan Thee Stallion
+# of Track: (1)
+155, Megan Thee Stallion, Savage Remix (feat. Beyoncé), 730171
+
+
+Artist: Queen
+# of Track: (1)
+156, Queen, Bohemian Rhapsody - 2011 Mix, 726747
+
+
+Artist: Polo G
+# of Track: (2)
+157, Polo G, 21, 720159
+171, Polo G, Martin & Gina, 677577
+
+
+Artist: Niack
+# of Track: (1)
+158, Niack, Oh Juliana, 719449
+
+
+Artist: Bea Miller
+# of Track: (1)
+160, Bea Miller, feel something, 709924
+
+
+Artist: BANNERS
+# of Track: (1)
+161, BANNERS, Someone To You, 708376
+
+
+Artist: John Legend
+# of Track: (1)
+163, John Legend, All of Me, 704590
+
+
+Artist: Halsey
+# of Track: (1)
+164, Halsey, Without Me, 695943
+
+
+Artist: Justin Quiles
+# of Track: (1)
+165, Justin Quiles, Jeans, 695582
+
+
+Artist: Dean Lewis
+# of Track: (1)
+167, Dean Lewis, Be Alright, 691377
+
+
+Artist: Morgan Wallen
+# of Track: (1)
+168, Morgan Wallen, 7 Summers, 689043
+
+
+Artist: Manuel Turizo
+# of Track: (1)
+169, Manuel Turizo, Quiéreme Mientras Se Pueda, 682544
+
+
+Artist: Kina
+# of Track: (1)
+170, Kina, Get You The Moon (feat. Snøw), 678202
+
+
+Artist: Headie One
+# of Track: (1)
+172, Headie One, Ain't It Different (feat. AJ Tracey & Stormzy), 674426
+
+
+Artist: The Chainsmokers
+# of Track: (1)
+173, The Chainsmokers, Something Just Like This, 672605
+
+
+Artist: Passenger
+# of Track: (1)
+174, Passenger, Let Her Go, 672519
+
+
+Artist: Lil Peep
+# of Track: (1)
+175, Lil Peep, Star Shopping, 672430
+
+
+Artist: Lil Baby
+# of Track: (1)
+176, Lil Baby, We Paid (feat. 42 Dugg), 670981
+
+
+Artist: Peach Tree Rascals
+# of Track: (1)
+178, Peach Tree Rascals, Mariposa, 667201
+
+
+Artist: Dan + Shay
+# of Track: (1)
+179, Dan + Shay, 10 000 Hours (with Justin Bieber), 662968
+
+
+Artist: Robin Schulz
+# of Track: (1)
+180, Robin Schulz, Alane, 661081
+
+
+Artist: Alex Rose
+# of Track: (1)
+181, Alex Rose, Jangueo, 660744
+
+
+Artist: Tame Impala
+# of Track: (1)
+182, Tame Impala, The Less I Know The Better, 658903
+
+
+Artist: KitschKrieg
+# of Track: (1)
+185, KitschKrieg, Unterwegs, 656529
+
+
+Artist: Katy Perry
+# of Track: (1)
+186, Katy Perry, Cry About It Later, 656213
+
+
+Artist: The Neighbourhood
+# of Track: (1)
+189, The Neighbourhood, Sweater Weather, 648672
+
+
+Artist: Noah Cyrus
+# of Track: (1)
+190, Noah Cyrus, July, 647567
+
+
+Artist: JACKBOYS
+# of Track: (1)
+191, JACKBOYS, OUT WEST (feat. Young Thug), 646287
+
+
+Artist: Ali Gatie
+# of Track: (1)
+193, Ali Gatie, It's You, 640588
+
+
+Artist: Selena Gomez
+# of Track: (1)
+194, Selena Gomez, Lose You To Love Me, 639171
+
+
+Artist: Rod Wave
+# of Track: (1)
+195, Rod Wave, Rags2Riches 2 (feat. Lil Baby), 632600
+
+
+Artist: Jowell & Randy
+# of Track: (1)
+196, Jowell & Randy, Anaranjado, 631534
+
+
+Artist: Vance Joy
+# of Track: (1)
+198, Vance Joy, Riptide, 627875
+
+
+Artist: Dalex
+# of Track: (1)
+199, Dalex, +Linda, 627234
+
+
+Artist: Mustard
+# of Track: (1)
+200, Mustard, Ballin' (with Roddy Ricch), 625490
+
+
