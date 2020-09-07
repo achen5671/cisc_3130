@@ -23,5 +23,7 @@
 hs_err_pid*
 
 # ssh keys 
-*git_sshkey
-*git_sshkey.pub
+git_sshkey
+git_sshkey.pub
+/.ssh
+

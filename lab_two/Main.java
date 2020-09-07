@@ -80,9 +80,9 @@ public class Main{
 				artistTrack.add(artist);
 			}else{
 				//check if artist exist
-				for(int i = 0; i < artistTrack.size(); i++){
-					if(artistName.equals(artistTrack.get(i).getArtist())){
-						artistTrack.get(i).addTrack(trackPosition, trackName,numStreamed);
+				for(Artist art: artistTrack){
+					if(artistName.equals(art.getArtist())){
+						art.addTrack(trackPosition, trackName,numStreamed);
 						exist = false;
 					}
 				}
