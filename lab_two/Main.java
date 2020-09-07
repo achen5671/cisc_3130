@@ -22,10 +22,10 @@ public class Main{
 			addTrack(br, artistTrack);
 
 			//Loop through arraylist and prints out toString()
-			for(int i = 0; i < artistTrack.size(); i++){
-				outFile.println("Artist: " + artistTrack.get(i).getArtist());
-				outFile.println("# of Track: (" + artistTrack.get(i).getNumTracks() + ")");
-				outFile.println(artistTrack.get(i).toString());
+			for(Artist art : artistTrack){
+				outFile.println("Artist: " + art.getArtist());
+				outFile.println("# of Track: (" + art.getNumTracks() + ")");
+				outFile.println(art.toString());
 			}
 			
 			//flush stream. (Write out any buffered output)
