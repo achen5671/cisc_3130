@@ -1,0 +1,10 @@
+- started lab_three
+- added a lab_one folder
+- changed forloop in main method to foreach
+- changed forloop in addTrack() to foreach loop
+- add ssh to git ignore + updated readme file with lab two
+- lab two [done!!]
+- lab two [done!]
+- started lab_two
+- added ssh key + java prgm
+- Initial commit
