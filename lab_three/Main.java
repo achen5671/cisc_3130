@@ -20,6 +20,7 @@ public class Main{
 
 			//Add track method
 			addTracks(br, artistTrack);
+			sortArtist(artistTrack);
 
 			//Loop through arraylist and prints out toString()
 			for(Artist art : artistTrack){
@@ -93,6 +94,16 @@ public class Main{
 				}
 			}
 		}
+	}
+
+	//method that uses collection sort to sort the filled arraylist alphabetically by artist name
+	public static void sortArtist(ArrayList<Artist> artistTracks){
+		Collections.sort(artistTracks, new Comparator<Artist>(){
+			public int compare(Artist a1, Artist a2){
+				return a1.getArtist().compareTo(a2.getArtist());
+			}
+
+		});
 	}
 
 	
