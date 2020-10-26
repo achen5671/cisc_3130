@@ -8,3 +8,6 @@ This program reads in a spotify csv file that was exported from https://spotifyc
 
 ##Lab 3
 Similar program as lab two. Each artist in the spotify csv file is created into a object. Each artist object nests a track object that stores every track on the spotify top chart. Artist names are sorted alphabetically in the ArrayList.
+
+##Lab 4
+Read in 3 months worth of csv file and store each song to an arraylist. Then remove the duplicates by converting it to a hashset then storing the value to a queue. We use poll() to remove a value from the queue (song played) and add it to a stack to refer too. 
