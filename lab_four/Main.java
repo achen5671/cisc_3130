@@ -5,32 +5,90 @@ import java.util.*;
 public class Main{
 	public static void main(String[] args){
 		//Path name to Spotify csv
-		String path = "C:\\Users\\Andy Chen\\Documents\\GitHub\\cisc_3130\\lab_three\\regional-global-daily-latest.csv";
+		Scanner input = new Scanner(System.in);
+		String name;
+		ArrayList<Song> songList = new ArrayList<Song>();
+		BufferedReader br;
+		String path = "C:\\Users\\Andy Chen\\Documents\\GitHub\\cisc_3130\\lab_four\\Fiscal Quarter List\\";
+
+
+		String[] fiscalQuarter = {path + "regional-global-weekly-2020-07-03--2020-07-10.csv",
+		path + "regional-global-weekly-2020-07-10--2020-07-17.csv",
+		path + "regional-global-weekly-2020-07-17--2020-07-24.csv",
+		path + "regional-global-weekly-2020-07-24--2020-07-31.csv",
+		path + "regional-global-weekly-2020-07-31--2020-08-07.csv",
+		path + "regional-global-weekly-2020-08-07--2020-08-14.csv",
+		path + "regional-global-weekly-2020-08-14--2020-08-21.csv",
+		path + "regional-global-weekly-2020-08-21--2020-08-28.csv",
+		path + "regional-global-weekly-2020-08-28--2020-09-04.csv",
+		path + "regional-global-weekly-2020-09-04--2020-09-11.csv",
+		path + "regional-global-weekly-2020-09-04--2020-09-11.csv",
+		path + "regional-global-weekly-2020-09-04--2020-09-11.csv",
+		};
+
 		//try catch block. Throws neccesary error message if any.
 		try{
-			//Print output to txt file.
-			PrintWriter outFile = new PrintWriter("C:\\Users\\Andy Chen\\Documents\\GitHub\\cisc_3130\\lab_three\\Artists-WeekOf09.03.2020.txt");
-			//Obtaining input from file
-			BufferedReader br = new BufferedReader(new FileReader(path));
-			//ArrayList of artists
-			ArrayList<Artist> artistTrack = new ArrayList<Artist>();
+
+			PrintWriter outFile = new PrintWriter("C:\\Users\\Andy Chen\\Documents\\GitHub\\cisc_3130\\lab_four\\output.txt");
+			Stack<Song> stack = new Stack<Song>();
+
+			System.out.println("VIP: Please enter your name.");
+			name = input.nextLine();
+
+			System.out.println("Hi " + name);
+			System.out.println("This program consist the fiscal quarter. Months of July  - Septemeber (17 weeks)");
+			outFile.println("This program consist the fiscal quarter. Months of July  - Septemeber (17 weeks)");
+			outFile.println();
+
 			
-			//READS FIRST LINE (HEADER) and prints to output file
-			outFile.println(br.readLine() + "\n");
 
-			//Add track method
-			addTracks(br, artistTrack);
-			sortArtist(artistTrack);
+			//for each string in the array of csv file, read it
+			for(String s: fiscalQuarter){
+				br = new BufferedReader(new FileReader(s));
+				addTracks(br, songList);
 
-			//Loop through arraylist and prints out toString()
-			for(Artist art : artistTrack){
-				outFile.println("Artist: " + art.getArtist());
-				outFile.println("# of Track: (" + art.getNumTracks() + ")");
-				outFile.println(art.toString());
 			}
+			//call sort method to sort artist
+			sortArtist(songList);
+
+			//add the list to a set to remove duplicates
+			Set<Song> set = new HashSet<>(songList);
+
+			//create a queue to store the list of songs
+			Queue<Song> que = new LinkedList<Song>();
+
+
+			//loop through songlist and add it to a queue
+			for(Song s: set){
+				que.add(s);
+			}
+
+
 			
-			//flush stream. (Write out any buffered output)
-			outFile.flush();
+			//commands
+			//play first song
+
+			stack.add(que.poll());
+
+			//play the next 50 songs
+			for(int i = 0; i < 50; i++){
+				stack.add(que.poll());
+			}
+		
+
+			//go through the que and print out the songs
+			outFile.println("Here are the songs left in your queue for the fiscal quarter");
+			outFile.println();
+			for(Song s: que){
+				outFile.println(s.getArtistName() + " " +   s.getSongName());
+
+			}
+			System.out.println();
+			System.out.println("The last song played was");
+			System.out.println(stack.pop());
+			outFile.println();
+			outFile.println("The last song played was");
+			outFile.println(stack.pop());
 
 		//Throw error if any
 		}catch(FileNotFoundException e){
@@ -38,21 +96,21 @@ public class Main{
 		}catch(IOException e){
 			System.err.println("There is an IOException");
 		}
-	}
+	}	
 
 
 	/**
 	**input:** 
 	BufferedReader br,
-	ArrayList of artist
+	ArrayList of songs
 	**process:** 
-	Read in artist name, trackname, trackposition, and # time streamed. Also checks whether the artist already exist in the arraylist.
+	Read in artist name and song name.
 	**output:** 
-	If artist exist, add the track to the object, if NOT creating a new artist and add info. 
+	Create a song obj and add it to the arraylist songs
 	**/
-	public static void addTracks(BufferedReader br, ArrayList<Artist> artistTrack) throws IOException{
+	public static void addTracks(BufferedReader br, ArrayList<Song> songs) throws IOException{
 		//vars
-		Artist artist;
+		Song song;
 		String info = "";
 		//while loop that loops through each existing line
 		while((info = br.readLine()) != null){
@@ -65,46 +123,26 @@ public class Main{
 			String[] tokens = info.split(",");
 			
 			//Find track position
-			int trackPosition = Integer.parseInt(tokens[0]);
+			//int songPosition = Integer.parseInt(tokens[0]);
 			//Find Song Artist
-			String trackName = tokens[1];
+			String songName = tokens[1];
 			//Find track name
 			String artistName = tokens[2];
 			//Find # of time Stream
-			int numStreamed = Integer.parseInt(tokens[3]);
-			//boolean to check if artist exist in the list.
-			boolean exist = true;
+			//int numStreamed = Integer.parseInt(tokens[3]);
 
-			//check if list is empty
-			if(artistTrack.size() == 0){
-				artist = new Artist(artistName, trackPosition, trackName,numStreamed);
-				artistTrack.add(artist);
-			}else{
-				//check if artist exist
-				for(Artist art: artistTrack){
-					if(artistName.equals(art.getArtist())){
-						art.addTrack(trackPosition, trackName,numStreamed);
-						exist = false;
-					}
-				}
-				//condition if artist does NOT exist
-				if(exist){
-					artist = new Artist(artistName,trackPosition, trackName,numStreamed);
-					artistTrack.add(artist);
-				}
-			}
+			song = new Song(artistName, songName);
+			songs.add(song);
 		}
 	}
 
 	//method that uses collection sort to sort the filled arraylist alphabetically by artist name
-	public static void sortArtist(ArrayList<Artist> artistTracks){
-		Collections.sort(artistTracks, new Comparator<Artist>(){
-			public int compare(Artist a1, Artist a2){
-				return a1.getArtist().compareTo(a2.getArtist());
+	public static void sortArtist(ArrayList<Song> songList){
+		Collections.sort(songList, new Comparator<Song>(){
+			public int compare(Song s1, Song s2){
+				return s1.getSongName().compareTo(s2.getSongName());
 			}
 
 		});
 	}
-
-	
 }
