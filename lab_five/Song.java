@@ -1,27 +1,23 @@
 public class Song{
-	//instance var
-	private String artistName; 
-	private String songName;
+	//key
+	private String songTitle; 
+	//instance vars
+	private int streamCount;
+	private String artistName;
+	private int artistAverageStreamCount;
 
-	//constructor
-	public Song(String artistName, String songName){
+	Song leftChild;
+	Song rightChild;
+
+	public Song(String songTitle, int streamCount, String artistName){
+		this.songTitle = songTitle;
+		this.streamCount = streamCount;
 		this.artistName = artistName;
-		this.songName = songName;
 
 	}
 
-	//getters
-	public String getArtistName(){
-		return artistName;
+	public String getSongTitle(){
+		return songTitle;
 	}
-
-	public String getSongName(){
-		return songName;
-	}
-
-	public String toString(){
-		return artistName + ", " + songName;
-	}
-
 
 }

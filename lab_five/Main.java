@@ -30,7 +30,8 @@ public class Main{
 		try{
 
 			PrintWriter outFile = new PrintWriter("output.txt");
-			Stack<Song> stack = new Stack<Song>();
+			SongPlayList songTree = new SongPlayList();
+		
 
 			System.out.println("VIP: Please enter your name.");
 			name = input.nextLine();
@@ -45,50 +46,15 @@ public class Main{
 			//for each string in the array of csv file, read it
 			for(String s: fiscalQuarter){
 				br = new BufferedReader(new FileReader(s));
-				addTracks(br, songList);
+				addTracks(br, songTree);
 
 			}
-			//call sort method to sort artist
-			sortArtist(songList);
 
-			//add the list to a set to remove duplicates
-			Set<Song> set = new HashSet<>(songList);
-
-			//create a queue to store the list of songs
-			Queue<Song> que = new LinkedList<Song>();
-
-
-			//loop through songlist and add it to a queue
-			for(Song s: set){
-				que.add(s);
-			}
+			//inOrderTraverseTree(songTree.getRoot());
 
 
 			
-			//commands
-			//play first song
 
-			stack.add(que.poll());
-
-			//play the next 50 songs
-			for(int i = 0; i < 50; i++){
-				stack.add(que.poll());
-			}
-		
-
-			//go through the que and print out the songs
-			outFile.println("Here are the songs left in your queue for the fiscal quarter");
-			outFile.println();
-			for(Song s: que){
-				outFile.println(s.getArtistName() + " " +   s.getSongName());
-
-			}
-			System.out.println();
-			System.out.println("The last song played was");
-			System.out.println(stack.pop());
-			outFile.println();
-			outFile.println("The last song played was");
-			outFile.println(stack.pop());
 
 		//Throw error if any
 		}catch(FileNotFoundException e){
@@ -108,7 +74,7 @@ public class Main{
 	**output:** 
 	Create a song obj and add it to the arraylist songs
 	**/
-	public static void addTracks(BufferedReader br, ArrayList<Song> songs) throws IOException{
+	public static void addTracks(BufferedReader br, SongPlayList songTree) throws IOException{
 		//vars
 		Song song;
 		String info = "";
@@ -125,24 +91,26 @@ public class Main{
 			//Find track position
 			//int songPosition = Integer.parseInt(tokens[0]);
 			//Find Song Artist
+			
 			String songName = tokens[1];
 			//Find track name
 			String artistName = tokens[2];
-			//Find # of time Stream
-			//int numStreamed = Integer.parseInt(tokens[3]);
+			int streamCount = Integer.parseInt(tokens[3]);
 
-			song = new Song(artistName, songName);
-			songs.add(song);
+			songTree.addSong(songName, streamCount,artistName);
+			
+
+			
 		}
+
 	}
 
-	//method that uses collection sort to sort the filled arraylist alphabetically by artist name
-	public static void sortArtist(ArrayList<Song> songList){
-		Collections.sort(songList, new Comparator<Song>(){
-			public int compare(Song s1, Song s2){
-				return s1.getSongName().compareTo(s2.getSongName());
-			}
 
-		});
+	public static void inOrderTraverseTree(Song focusSong){
+		if(focusSong !=null){
+			inOrderTraverseTree(focusSong.leftChild);
+			System.out.println(focusSong);
+			inOrderTraverseTree(focusSong.leftChild);
+		}
 	}
 }
