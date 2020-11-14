@@ -14,3 +14,6 @@ Read in 3 months worth of csv file and store each song to an arraylist. Then rem
 
 ##Lab 5
 Read in 4 months worth of csv file and created a BST with nodes (song) w/ keys (song title). Also added a method to find the average # stream count for each artist. Then we Traverse the songs in the tree and print it out into a file. 
+
+##Lab 6
+Created a grade calulator for CISC3130. The calculator calculates the grade you will get for CISC3130 class base on what you scored on exams and the assignments you completed. The result spits out a letter grade, your score, and also the amount of points you need to score a better grade.
