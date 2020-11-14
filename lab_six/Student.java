@@ -6,9 +6,9 @@ public class Student{
 	private final int labsScore = 16;
 	private final int midtermScore = 20; 
 	private final int finalExamScore = 20;
-	private final int totalScore = 100;
+	private final double totalScore = 100;
 
-
+	private String name;
 	private double studentTotalScore = 0;
 
 	private double studentPracticeProbScore = 0;
@@ -18,7 +18,8 @@ public class Student{
 	
 
 	//contructor
-	public Student(int studentPracticeProb, int studentLabs, int studentMidterm1, int studentMidterm2, int studentFinalScore){
+	public Student(String name, int studentPracticeProb, int studentLabs, int studentMidterm1, int studentMidterm2, int studentFinalScore){
+		this.name = name;
 		calculateStudentPracticeProblemScore(studentPracticeProb);
 		calculateStudentLabScore(studentLabs);
 		calculateStudentMidTermScore(studentMidterm1);
@@ -37,20 +38,47 @@ public class Student{
 		studentTotalScore += studentLabsScore;
 	}
 
-	private void calculateStudentMidTermScore(int studentMidterm){
+	private void calculateStudentMidTermScore(double studentMidterm){
 		studentMidtermScore = (studentMidterm/100) * 10;
 		studentTotalScore += studentMidtermScore;
 
 	}
 
-	private void calculateStudentFinalScore(int studentFinal){
-		studentFinalExamScore = (studentFinal/100) * 20;
+	private void calculateStudentFinalScore(double studentFinal){
+		studentFinalExamScore = (studentFinal/100) * finalExamScore;
 		studentTotalScore += studentFinalExamScore;
 
 	}
 
 	public String toString(){
-		return "Student Scored a " + studentTotalScore;
+		char letter;
+
+		if(studentTotalScore >= 90){
+			letter = 'A';
+		}else if(studentTotalScore >= 80){
+			letter = 'B';
+		}
+		else if(studentTotalScore >= 70){
+			letter = 'C';
+		}
+		else if(studentTotalScore >= 60){
+			letter = 'D';
+		}else{
+			letter = 'F';
+		}
+
+		return name +" scored a " + studentTotalScore + ". Letter Grade: " + letter + ". " +scoreForGrade();
+	}
+
+
+	private String scoreForGrade(){
+			double num = studentTotalScore / totalScore;
+
+			return "\nYou need to score: \n" + (90-num) + " more points for a A\n" + 
+					(80-num) + " more points for a B\n" + 
+					(70-num) + " more points for a C\n" + 
+					(60-num) + " more points for a D\n";
+
 	}
 
 

@@ -1,74 +1,132 @@
 import java.util.*;
 
-public class Main{
-	public static void main(String[] args){
-		int numPracticeProb = 0;
-		int numLab = 0;
-		int midtermScore1 = 0;
-		int midtermScore2 = 0;
-		int finalScore = 0;
+public class Main
+{
+    public static void main(String[] args)
+    {
+        int numPracticeProb = 0;
+        int numLab = 0;
+        int midtermScore1 = 0;
+        int midtermScore2 = 0;
+        int finalScore = 0;
 
-		Scanner input = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
 
-		System.out.println("Welcome to the CISC3130 Grade Calculator");
-		System.out.println("What is your name?");
-		String name = input.nextLine();
-		
-		menu();
-
-		while(input.hasNext()){
-
-
-			int choice = input.nextInt();
-			switch(choice){
-				case 1: 
-					System.out.println("How many Practice Problems have you completed?");
-					numPracticeProb = input.nextInt();
-					break;
-				case 2:
-					System.out.println("How many Labs have you completed?");
-					numLab = input.nextInt();
-					break;
-				case 3:
-					System.out.println("What did score on midterm # 1");
-					midtermScore1 = input.nextInt();
-					break;
-				case 4: 
-					System.out.println("What did score on midterm # 2");
-					midtermScore2 = input.nextInt();
-					break;
-				case 5:
-					System.out.println("What did you score on your final?");
-					finalScore = input.nextInt(); 
-					break;
-				case 6: 
-					Student student = new Student(numPracticeProb, numLab, midtermScore1, midtermScore2, finalScore);
-					System.out.print(student);
-					return;
-				case 7: 
-					System.out.println("Goodluck " + name + "!");
-					return;
-
-				
-			}
-			menu();
-		}
+        System.out.println("Welcome to the CISC3130 Grade Calculator");
+        System.out.println("What is your name?");
+        String name = input.nextLine();
+        System.out.println();
+        menu();
+        try
+        {
+            while(input.hasNext())
+            {
 
 
+                String choice = input.nextLine();
 
-	}
+                switch(choice.toLowerCase())
+                {
+                case "1":
+                    System.out.println("How many Practice Problems have you completed?");
+                    numPracticeProb = input.nextInt();
+                    if(numPracticeProb < 0 || numPracticeProb > 8)
+                    {
+                        System.out.println("Invalid #. There are only 8 practice problems.");
+                        numPracticeProb = 0;
+                        break;
+                    }
+
+                    break;
 
 
+                case "2":
+                    System.out.println("How many Labs have you completed?");
+                    numLab = input.nextInt();
+                    if(numLab < 0 || numLab > 7)
+                    {
+                        System.out.println("Invalid #. There are only 7 labs.");
+                        numLab = 0;
+                        break;
+                    }
 
-	public static void menu(){
-		System.out.println("Please choose what you like to enter");
-		System.out.println("1. # of Practice Problems you have completed");
-		System.out.println("2. # of Labs completed");
-		System.out.println("3. Score got received on Midterm # 1");
-		System.out.println("4. Score got received on Midterm # 2");
-		System.out.println("5. Score on your final");
-		System.out.println("6. Calculate Score");
-		System.out.println("7. Quit");
-		System.out.println("Note: Score not entered will be taken as a 0!");
-	}
+                    break;
+
+
+                case "3":
+                    System.out.println("What did score on midterm # 1");
+                    midtermScore1 = input.nextInt();
+                    if(midtermScore1 < 0 || midtermScore1 > 100)
+                    {
+                        System.out.println("Invalid #. Midterm is scored out of 100");
+                        midtermScore1 = 0;
+                        break;
+                    }
+
+                    break;
+
+
+                case "4":
+                    System.out.println("What did score on midterm # 2");
+                    midtermScore2 = input.nextInt();
+                    if(midtermScore2 < 0 || midtermScore2 > 100)
+                    {
+                        System.out.println("Invalid #. Midterm is scored out of 100");
+                        midtermScore2 = 0;
+                        break;
+                    }
+
+                    break;
+
+
+                case "5":
+                    System.out.println("What did you score on your final?");
+                    finalScore = input.nextInt();
+                    if(finalScore < 0 || finalScore > 100)
+                    {
+                        System.out.println("Invalid #. Final is scored out of 100");
+                        finalScore = 0;
+                        break;
+                    }
+
+                    break;
+
+
+                case "c":
+                    Student student = new Student(name, numPracticeProb, numLab, midtermScore1, midtermScore2, finalScore);
+                    System.out.print(student);
+                    return;
+                case "q":
+                    System.out.println("Goodluck " + name + "!");
+                    return;
+                default:
+                    System.out.println("Invalid option. Please try again!");
+
+
+                }
+                System.out.println();
+                menu();
+            }
+
+        }
+        catch(Exception e)
+        {
+            System.out.println("An error has occured, the programs has closed.");
+        }
+    }
+
+    public static void menu()
+    {
+        System.out.println("*****Please enter all assignments you have completed*****");
+        System.out.println("*****Note: Score not entered will be taken as a 0!*****");
+        System.out.println("1. # of Practice Problems you have completed");
+        System.out.println("2. # of Labs completed");
+        System.out.println("3. Score got received on Midterm # 1");
+        System.out.println("4. Score got received on Midterm # 2");
+        System.out.println("5. Score on your final");
+        System.out.println("c. Calculate Score");
+        System.out.println("q. Quit");
+        System.out.println();
+
+    }
 }
