@@ -1,13 +1,14 @@
 import java.util.*;
 
 public class Student{
-	//instance vars
+	//possible points students can score
 	private final int practiceProbScore = 44;
 	private final int labsScore = 16;
 	private final int midtermScore = 20; 
 	private final int finalExamScore = 20;
 	private final double totalScore = 100;
 
+	//instance vars
 	private String name;
 	private double studentTotalScore = 0;
 
@@ -33,23 +34,25 @@ public class Student{
 		studentTotalScore += studentPracticeProbScore;
 	}
 
+	//method to caluculate the lab score. 
 	private void calculateStudentLabScore(int studentLabs){
 		studentLabsScore = studentLabs * (16/7);
 		studentTotalScore += studentLabsScore;
 	}
 
+	//method to calculate the student midterm score
 	private void calculateStudentMidTermScore(double studentMidterm){
 		studentMidtermScore = (studentMidterm/100) * 10;
 		studentTotalScore += studentMidtermScore;
 
 	}
-
+	//method to calculate the students final score
 	private void calculateStudentFinalScore(double studentFinal){
 		studentFinalExamScore = (studentFinal/100) * finalExamScore;
 		studentTotalScore += studentFinalExamScore;
 
 	}
-
+	//toString method to print out info and finds the letter grade appropriate for the student base on their score
 	public String toString(){
 		char letter;
 
@@ -70,7 +73,7 @@ public class Student{
 		return name +" scored a " + studentTotalScore + ". Letter Grade: " + letter + ". " +scoreForGrade();
 	}
 
-
+	//finds the points needed for a better grade
 	private String scoreForGrade(){
 			double num = studentTotalScore / totalScore;
 

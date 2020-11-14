@@ -4,27 +4,34 @@ public class Main
 {
     public static void main(String[] args)
     {
+    	//variables
         int numPracticeProb = 0;
         int numLab = 0;
         int midtermScore1 = 0;
         int midtermScore2 = 0;
         int finalScore = 0;
 
+        //scanners for input
         Scanner input = new Scanner(System.in);
 
+        //start
         System.out.println("Welcome to the CISC3130 Grade Calculator");
         System.out.println("What is your name?");
         String name = input.nextLine();
         System.out.println();
+
+        //print menu
         menu();
+        //try catch. close program if an error appears. If not, do the task the user entered. 
         try
         {
             while(input.hasNext())
             {
 
-
+            	//receives user choice
                 String choice = input.nextLine();
 
+                //switch case for the user choice. Each case checks whether the # enter is valid
                 switch(choice.toLowerCase())
                 {
                 case "1":
@@ -91,11 +98,12 @@ public class Main
 
                     break;
 
-
+                //create a student obj with the grades enter. 
                 case "c":
                     Student student = new Student(name, numPracticeProb, numLab, midtermScore1, midtermScore2, finalScore);
                     System.out.print(student);
                     return;
+                //quit the program
                 case "q":
                     System.out.println("Goodluck " + name + "!");
                     return;
@@ -109,12 +117,14 @@ public class Main
             }
 
         }
+        //catch any error that comes up
         catch(Exception e)
         {
             System.out.println("An error has occured, the programs has closed.");
         }
     }
 
+    //method to print menu 
     public static void menu()
     {
         System.out.println("*****Please enter all assignments you have completed*****");
