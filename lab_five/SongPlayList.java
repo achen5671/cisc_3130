@@ -1,10 +1,10 @@
 public class SongPlayList{
 	private Song root;
 
-	
-	public void addSong(String songTitle, int streamCount, String artistName){
+	//method addSong that creates a song node. It then check whether the song should be added to the left or right side of the BST
+	public void addSong(String songTitle, String streamCount, String artistName){
 
-		Song newSong = new Song(songTitle, streamCount, artistName);
+		Song newSong = new Song(songTitle,streamCount, artistName);
 
 		if(root == null){
 			root = newSong;
@@ -14,15 +14,16 @@ public class SongPlayList{
 
 			while(true){
 				parent = focusSong;
-
-				if(songTitle.compareTo(focusSong.getSongTitle()) < 0 ){
+				//add node to left child
+				if(songTitle.compareTo(focusSong.getSongTitle()) <= 0 ){
 					focusSong = focusSong.leftChild;
 
 					if(focusSong ==null){
 						parent.leftChild = newSong;
 						return;
 					}
-				}else{
+					//add node to right child
+				}else if(songTitle.compareTo(focusSong.getSongTitle()) > 0){
 					focusSong = focusSong.rightChild;
 
 					if(focusSong == null){
@@ -33,13 +34,9 @@ public class SongPlayList{
 			}
 		}
 	}
-
+	//getter for root
 	public Song getRoot(){
 		return root;
 	}
-
-
-
-
 
 }

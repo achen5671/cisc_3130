@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Main{
 	public static void main(String[] args){
-		//Path name to Spotify csv
+		//Relative Path name to Spotify csv
 		Scanner input = new Scanner(System.in);
 		String name;
 		ArrayList<Song> songList = new ArrayList<Song>();
@@ -30,9 +30,10 @@ public class Main{
 		try{
 
 			PrintWriter outFile = new PrintWriter("output.txt");
+			//Tree
 			SongPlayList songTree = new SongPlayList();
 		
-
+			//UI
 			System.out.println("VIP: Please enter your name.");
 			name = input.nextLine();
 
@@ -49,8 +50,9 @@ public class Main{
 				addTracks(br, songTree);
 
 			}
+			//traverse through tree and call toString()
+			inOrderTraverseTree(songTree.getRoot(), outFile);
 
-			//inOrderTraverseTree(songTree.getRoot());
 
 
 			
@@ -68,11 +70,11 @@ public class Main{
 	/**
 	**input:** 
 	BufferedReader br,
-	ArrayList of songs
+	songTree BST
 	**process:** 
 	Read in artist name and song name.
 	**output:** 
-	Create a song obj and add it to the arraylist songs
+	Create a song node and add it to the tree
 	**/
 	public static void addTracks(BufferedReader br, SongPlayList songTree) throws IOException{
 		//vars
@@ -95,9 +97,12 @@ public class Main{
 			String songName = tokens[1];
 			//Find track name
 			String artistName = tokens[2];
-			int streamCount = Integer.parseInt(tokens[3]);
+			String streamCount = tokens[3];
 
-			songTree.addSong(songName, streamCount,artistName);
+			songTree.addSong(songName,streamCount,artistName);
+
+			
+
 			
 
 			
@@ -105,12 +110,12 @@ public class Main{
 
 	}
 
-
-	public static void inOrderTraverseTree(Song focusSong){
+	//Traverse Method that calls toString for each child in the Tree
+	public static void inOrderTraverseTree(Song focusSong, PrintWriter outFile){
 		if(focusSong !=null){
-			inOrderTraverseTree(focusSong.leftChild);
-			System.out.println(focusSong);
-			inOrderTraverseTree(focusSong.leftChild);
+			inOrderTraverseTree(focusSong.leftChild,outFile);
+			outFile.println(focusSong);
+			inOrderTraverseTree(focusSong.rightChild,outFile);
 		}
 	}
 }

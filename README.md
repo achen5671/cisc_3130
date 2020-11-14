@@ -11,3 +11,6 @@ Similar program as lab two. Each artist in the spotify csv file is created into 
 
 ##Lab 4
 Read in 3 months worth of csv file and store each song to an arraylist. Then remove the duplicates by converting it to a hashset then storing the value to a queue. We use poll() to remove a value from the queue (song played) and add it to a stack to refer too. 
+
+##Lab 5
+Read in 4 months worth of csv file and created a BST with nodes (song) w/ keys (song title). Also added a method to find the average # stream count for each artist. Then we Traverse the songs in the tree and print it out into a file. 
